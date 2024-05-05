@@ -34,7 +34,6 @@ function stringCompresson(chars: string[]) : string[] {
         index--;
     }
     chars.length = index+2
-    console.log(chars.length);
     return chars;
 }
 var chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"];

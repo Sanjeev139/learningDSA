@@ -17,5 +17,5 @@ function removeDuplicate(arr) {
     }
     return res;
 }
-var arr = [10, 20, 20, 30, 30, 30];
+var arr = [12,4,5,12,6,4,5];
 console.log(removeDuplicate(arr));
