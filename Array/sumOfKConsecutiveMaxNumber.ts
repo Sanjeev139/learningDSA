@@ -24,5 +24,5 @@ function max(res:number, current:number) : number {
         return current;
     }
 }
-const data1 = [2,4,6,1,7,8];
+const data1 = [2,4,12,1,7,8];
 console.log(findKConsecutiveMax(data1,3))

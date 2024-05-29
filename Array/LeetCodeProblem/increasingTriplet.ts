@@ -14,13 +14,15 @@
  */
 
 function increasingtriplet(nums:number[]) : boolean {
-    let a = Infinity , b = Infinity ,c = Infinity;
+    let num_i = Infinity , num_j = Infinity;
     for (let index = 0; index < nums.length; index++) {
-        if(nums[index] < a) a = nums[index]
-        else if (nums[index] < b) b = nums[index];
-        else if (nums[index] < c) c = nums[index]
-
-        if (c < Infinity && c > b && b > a) return true
+        if(nums[index] < num_i) {
+            num_i = nums[index];
+        } else if(nums[index] < num_j) {
+            num_j = nums[index];
+        } else {
+            return true;
+        }
     }
     return false;
 }
